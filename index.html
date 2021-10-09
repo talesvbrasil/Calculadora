@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calculadora Illuminati</title>
+
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="calculadora">
+    <p id="visor">0</p>
+    <table>
+      <tr>
+        <td colspan="2" class="acoes" onclick="limpar('C')">C</td>
+        <td colspan="2" class="acoes" onclick="deletar('Del')">Del</td>
+      </tr>
+      <tr>
+        <td onclick="inserir('7')">7</td>
+        <td onclick="inserir('8')">8</td>
+        <td onclick="inserir('9')">9</td>
+        <td class="operadores" onclick="inserirop('/')">/</td>
+      </tr>
+      <tr>
+        <td onclick="inserir('4')">4</td>
+        <td onclick="inserir('5')">5</td>
+        <td onclick="inserir('6')">6</td>
+        <td class="operadores" onclick="inserirop('*')">*</td>
+      </tr>
+      <tr>
+        <td onclick="inserir('1')">1</td>
+        <td onclick="inserir('2')">2</td>
+        <td onclick="inserir('3')">3</td>
+        <td class="operadores" onclick="inserirop('-')">-</td>
+      </tr>
+      <tr>
+        <td class="operadores" onclick="inserir('.')">.</td>
+        <td onclick="inserir('0')">0</td>
+        <td class="acoes" onclick="calcular('=')">=</td>
+        <td class="operadores" onclick="inserirop('+')">+</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
